@@ -1,0 +1,10 @@
+{
+	"item.elementalfoxes.example_item": "Mud Bucket",
+	"item.elementalfoxes.vulpesium_crystal": "Vulpesium Crystal",
+	"block.elementalfoxes.example_block": "Lightning Conductor",
+	"block.elementalfoxes.vulpesium": "Vulpesium",
+	"block.elementalfoxes.quarry": "Quarry",
+	"block.elementalfoxes.silk_quarry": "Silk Touch Quarry",
+	
+	"itemGroup.elemental_foxes": "Elemental Foxes"
+}

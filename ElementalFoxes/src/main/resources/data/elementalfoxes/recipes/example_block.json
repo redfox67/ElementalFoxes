@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"QRG",
+		"RDR",
+		"QRQ"
+	],
+	"key": {
+		"Q": {
+			"item": "minecraft:quartz_block"
+		},
+		"R": {
+			"item": "minecraft:redstone_block"
+		},
+		"D": {
+			"item": "minecraft:diamond_block"
+		}
+	},
+	"result": {
+		"item": "elementalfoxes:example_block",
+		"count": 1
+	}
+}
