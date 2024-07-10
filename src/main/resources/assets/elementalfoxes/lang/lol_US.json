@@ -1,0 +1,26 @@
+{
+	"item.elementalfoxes.example_item": "oinker mud",
+	"item.elementalfoxes.vulpesium_crystal": "SHINEE",
+	"item.elementalfoxes.vulpesium_ingot": "OHRANJ BAR",
+	
+	"item.elementalfoxes.vulpesium_sword": "fanta pokey stic",
+	"item.elementalfoxes.vulpesium_pickaxe": "fanta poky digr",
+	"item.elementalfoxes.vulpesium_shovel": "fanta digr",
+	"item.elementalfoxes.vulpesium_axe": "fanta tre chopp thng",
+	"item.elementalfoxes.vulpesium_hoe": "fanta plant plants stik",
+	
+	"item.elementalfoxes.vulpesium_helmet": "snazz fanta het",
+	"item.elementalfoxes.vulpesium_chestplate": "oooo fanta t-shirrt",
+	"item.elementalfoxes.vulpesium_leggings": "fanta snazz paant",
+	"item.elementalfoxes.vulpesium_boots": "fanta crocks",
+	
+	"block.elementalfoxes.lightning_conductor": "big zappy",
+	"block.elementalfoxes.vulpesium": "SHINEE BLOCC",
+	"block.elementalfoxes.vulpesium_ore": "stone for SHINEE",
+	"block.elementalfoxes.vulpesium_metal": "SHINEE bloc metwl",
+	"block.elementalfoxes.quarry": "digr bloc",
+	"block.elementalfoxes.silk_quarry": "fance digr bloc",
+	"block.elementalfoxes.display_case": "valybul shewof",
+	
+	"itemGroup.elemental_foxes": "foxee frens with powrz"
+}
