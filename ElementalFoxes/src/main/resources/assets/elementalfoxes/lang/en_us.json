@@ -1,10 +1,26 @@
 {
 	"item.elementalfoxes.example_item": "Mud Bucket",
 	"item.elementalfoxes.vulpesium_crystal": "Vulpesium Crystal",
-	"block.elementalfoxes.example_block": "Lightning Conductor",
+	"item.elementalfoxes.vulpesium_ingot": "Vulpesium Ingot",
+	
+	"item.elementalfoxes.vulpesium_sword": "Vulpesium Sword",
+	"item.elementalfoxes.vulpesium_pickaxe": "Vulpesium Pickaxe",
+	"item.elementalfoxes.vulpesium_shovel": "Vulpesium Shovel",
+	"item.elementalfoxes.vulpesium_axe": "Vulpesium Axe",
+	"item.elementalfoxes.vulpesium_hoe": "Vulpesium Hoe",
+	
+	"item.elementalfoxes.vulpesium_helmet": "Vulpesium Helmet",
+	"item.elementalfoxes.vulpesium_chestplate": "Vulpesium Chestplate",
+	"item.elementalfoxes.vulpesium_leggings": "Vulpesium Leggings",
+	"item.elementalfoxes.vulpesium_boots": "Vulpesium Boots",
+	
+	"block.elementalfoxes.lightning_conductor": "Lightning Conductor",
 	"block.elementalfoxes.vulpesium": "Vulpesium",
+	"block.elementalfoxes.vulpesium_ore": "Vulpesium Ore",
+	"block.elementalfoxes.vulpesium_metal": "Vulpesium Steel",
 	"block.elementalfoxes.quarry": "Quarry",
 	"block.elementalfoxes.silk_quarry": "Silk Touch Quarry",
+	"block.elementalfoxes.display_case": "Display Case",
 	
 	"itemGroup.elemental_foxes": "Elemental Foxes"
 }

@@ -1,12 +1,10 @@
 package com.Harlefox.elementalfoxes.common.te;
 
-import com.Harlefox.elementalfoxes.ElementalFoxes;
 import com.Harlefox.elementalfoxes.common.container.DisplayCaseContainer;
 import com.Harlefox.elementalfoxes.core.init.TileEntityTypesInit;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.item.ItemStack;
@@ -18,47 +16,45 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class DisplayCaseTileEntity extends LockableLootTileEntity {
-
+	
 	public static int slots = 1;
 	
-
 	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
 
 	protected DisplayCaseTileEntity(TileEntityType<?> typeIn) {
 		super(typeIn);
 	}
-
+	
 	public DisplayCaseTileEntity() {
 		this(TileEntityTypesInit.DISPLAY_CASE_ENTITY_TYPE.get());
 	}
 
 	@Override
 	public int getContainerSize() {
-		// TODO Auto-generated method stub
 		return slots;
 	}
 
 	@Override
 	protected NonNullList<ItemStack> getItems() {
-		// TODO Auto-generated method stub
 		return this.items;
+	}
+	
+	public ItemStack getItem() {
+		return this.items.get(0);
 	}
 
 	@Override
 	protected void setItems(NonNullList<ItemStack> itemsIn) {
-		// TODO Auto-generated method stub
 		this.items = itemsIn;
 	}
 
 	@Override
 	protected ITextComponent getDefaultName() {
-		// TODO Auto-generated method stub
-		return new TranslationTextComponent("container." + ElementalFoxes.MOD_ID + ".display_case");
+		return new TranslationTextComponent("Display Case");
 	}
 
 	@Override
 	protected Container createMenu(int id, PlayerInventory player) {
-		// TODO Auto-generated method stub
 		return new DisplayCaseContainer(id, player, this);
 	}
 	
@@ -68,16 +64,16 @@ public class DisplayCaseTileEntity extends LockableLootTileEntity {
 		if(!this.trySaveLootTable(compound)) {
 			ItemStackHelper.saveAllItems(compound, this.items);
 		}
+		
 		return compound;
 	}
 	
 	@Override
-	public void load(BlockState state,CompoundNBT nbt) {
+	public void load(BlockState state, CompoundNBT nbt) {
 		super.load(state, nbt);
 		this.items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);
-		if (this.tryLoadLootTable(nbt)) {
+		if (!this.tryLoadLootTable(nbt)) {
 			ItemStackHelper.loadAllItems(nbt, this.items);
 		}
 	}
-
 }

@@ -16,7 +16,7 @@ public class ElementalFoxesItemGroup extends ItemGroup{
 	@Override
 	public ItemStack makeIcon() {
 		// TODO Auto-generated method stub
-		return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
+		return new ItemStack(ItemInit.VULPESIUM_CRYSTAL.get());
 	}
 
 }

@@ -9,6 +9,7 @@ import com.Harlefox.elementalfoxes.core.init.FeatureInit;
 import com.Harlefox.elementalfoxes.core.init.ItemInit;
 import com.Harlefox.elementalfoxes.core.init.TileEntityTypesInit;
 import com.Harlefox.elementalfoxes.core.itemgroup.ElementalFoxesItemGroup;
+import com.Harlefox.elementalfoxes.core.network.TutorialNetwork;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -20,6 +21,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("elementalfoxes")
@@ -30,6 +32,8 @@ public class ElementalFoxes {
 
 	public ElementalFoxes() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		
+		bus.addListener(this::commonSetup);;
 
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
@@ -48,5 +52,9 @@ public class ElementalFoxes {
 							.setRegistryName(block.getRegistryName()));
 		});
 
+	}
+	
+	public void commonSetup(final FMLCommonSetupEvent event) {
+		TutorialNetwork.init();
 	}
 }

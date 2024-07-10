@@ -2,6 +2,7 @@ package com.Harlefox.elementalfoxes.core.init;
 
 import com.Harlefox.elementalfoxes.ElementalFoxes;
 import com.Harlefox.elementalfoxes.common.te.DisplayCaseTileEntity;
+import com.Harlefox.elementalfoxes.common.te.LightningConductorTileEntity;
 import com.Harlefox.elementalfoxes.common.te.QuarryTileEntity;
 import com.Harlefox.elementalfoxes.common.te.SilkQuarryTileEntity;
 
@@ -14,6 +15,10 @@ public class TileEntityTypesInit {
 
 	public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPE = DeferredRegister
 			.create(ForgeRegistries.TILE_ENTITIES, ElementalFoxes.MOD_ID);
+	
+	public static final RegistryObject<TileEntityType<LightningConductorTileEntity>> LIGHTNING_CONDUCTOR_ENTITY_TYPE = TILE_ENTITY_TYPE
+			.register("lightning_conductor",
+					() -> TileEntityType.Builder.of(LightningConductorTileEntity::new, BlockInit.LIGHTNING_CONDUCTOR.get()).build(null));
 
 	public static final RegistryObject<TileEntityType<QuarryTileEntity>> QUARRY_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
 			.register("quarry",

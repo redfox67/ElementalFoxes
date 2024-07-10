@@ -2,7 +2,9 @@ package com.Harlefox.elementalfoxes.common.te;
 
 import com.Harlefox.elementalfoxes.core.init.TileEntityTypesInit;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.ITickableTileEntity;
@@ -32,7 +34,7 @@ public class SilkQuarryTileEntity extends TileEntity implements ITickableTileEnt
 			ItemStack dropstack = new ItemStack(b.getBlock(), 1);
 			ItemEntity drop = new ItemEntity(level, pos.getX()+1, pos.getY()+1, pos.getZ()+1, dropstack);
 			level.addFreshEntity(drop); 
-			counter = 240;
+			counter = (level.getBlockState(pos.below()).getHarvestLevel()*20)+50;
 		} else {
 			counter = counter - 1;
 		}
