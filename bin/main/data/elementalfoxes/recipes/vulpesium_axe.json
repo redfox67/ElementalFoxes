@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"VV",
+		"VS",
+		" S"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:stick"
+		},
+		"V": {
+			"item": "elementalfoxes:vulpesium_ingot"
+		}
+	},
+	"result": {
+		"item": "elementalfoxes:vulpesium_axe",
+		"count": 1
+	}
+}

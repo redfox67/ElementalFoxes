@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "elementalfoxes:vulpesium_crystal"
+		}
+	},
+	"result": {
+		"item": "elementalfoxes:vulpesium",
+		"count": 1
+	}
+}
