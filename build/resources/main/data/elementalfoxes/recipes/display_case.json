@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" B ",
+		"III"
+	],
+	"key": {
+		"B": {
+			"item": "minecraft:bookshelf"
+		},
+		"I": {
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	"result": {
+		"item": "elementalfoxes:display_case",
+		"count": 1
+	}
+}

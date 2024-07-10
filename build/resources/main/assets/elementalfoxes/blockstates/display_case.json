@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": {"model": "elementalfoxes:block/display_case", "y" : 270},
+		"facing=south": {"model": "elementalfoxes:block/display_case", "y" : 90},
+		"facing=east": {"model": "elementalfoxes:block/display_case"},
+		"facing=west": {"model": "elementalfoxes:block/display_case", "y" : 180}
+	}
+}
