@@ -1,0 +1,100 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 7/21/23, 9:54 PM
+Description: Ticking block entity
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.entity.EntityType.getDimensions()" because "p_i48580_1_" is null
+	at net.minecraft.entity.Entity.<init>(Entity.java:203) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.effect.LightningBoltEntity.<init>(LightningBoltEntity.java:36) ~[forge:?] {re:classloading}
+	at com.Harlefox.elementalfoxes.common.te.LightningConductorTileEntity.tick(LightningConductorTileEntity.java:29) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.tickBlockEntities(World.java:491) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:371) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:851) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:787) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tickServer(IntegratedServer.java:78) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:642) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.entity.Entity.<init>(Entity.java:203) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.effect.LightningBoltEntity.<init>(LightningBoltEntity.java:36) ~[forge:?] {re:classloading}
+	at com.Harlefox.elementalfoxes.common.te.LightningConductorTileEntity.tick(LightningConductorTileEntity.java:29) ~[?:?] {re:classloading}
+-- Block entity being ticked --
+Details:
+	Name: elementalfoxes:lightning_conductor // com.Harlefox.elementalfoxes.common.te.LightningConductorTileEntity
+	Block: Block{elementalfoxes:lightning_conductor}[lit=true]
+	Block location: World: (141,64,279), Chunk: (at 13,4,7 in 8,17; contains blocks 128,0,272 to 143,255,287), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Block: Block{elementalfoxes:lightning_conductor}[lit=true]
+	Block location: World: (141,64,279), Chunk: (at 13,4,7 in 8,17; contains blocks 128,0,272 to 143,255,287), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+Stacktrace:
+	at net.minecraft.world.World.tickBlockEntities(World.java:491) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:371) ~[forge:?] {re:classloading}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Dev'/167, l='ServerLevel[LightningTest]', x=141.14, y=64.00, z=272.74]]
+	Chunk stats: ServerChunkCache: 2286
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (16,70,176), Chunk: (at 0,4,0 in 1,11; contains blocks 16,0,176 to 31,255,191), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1899 game time, 1899 day time
+	Level name: LightningTest
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 143795 (now: false), thunder time: 113203 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:851) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:787) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tickServer(IntegratedServer.java:78) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:642) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.7, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 262979584 bytes (250 MB) / 1279262720 bytes (1220 MB) up to 2080374784 bytes (1984 MB)
+	CPUs: 4
+	JVM Flags: 3 total; -XX:+IgnoreUnrecognizedVMOptions -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+ShowCodeDetailsInExceptionMessages
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.34_mapped_official_1.16.5-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.34
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Elemental Foxes               |elementalfoxes                |NONE                |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.34_mapped_official_1.16.5-recomp|Forge                         |forge                         |36.2.34             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: b4203a60-3759-4e9b-b564-9c1d78f7a466
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/167, l='ServerLevel[LightningTest]', x=141.14, y=64.00, z=272.74]]
+	Data Packs: vanilla, mod:elementalfoxes, mod:forge
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'
