@@ -22,5 +22,7 @@
 	"block.elementalfoxes.silk_quarry": "fance digr bloc",
 	"block.elementalfoxes.display_case": "valybul shewof",
 	
-	"itemGroup.elemental_foxes": "foxee frens with powrz"
+	"itemGroup.elemental_foxes": "foxee frens with powrz",
+	
+	"entity.elementalfoxes.exampleentity": "Durt Cyub"
 }

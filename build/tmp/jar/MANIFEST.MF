@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Specification-Title: elementalfoxes
-Specification-Vendor: Harlefox
-Specification-Version: 1
 Implementation-Title: ElementalFoxes
 Implementation-Version: 1.0
+Specification-Vendor: Harlefox
+Specification-Title: elementalfoxes
+Implementation-Timestamp: 2024-07-10T09:36:38-0600
+Specification-Version: 1
 Implementation-Vendor: examplemodsareus
-Implementation-Timestamp: 2023-08-01T21:29:59-0400
 

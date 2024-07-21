@@ -1,5 +1,5 @@
-Java Launcher: C:\Program Files\Java\jdk1.8.0_202\bin\java.exe
-Arguments: '--in-jar, C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\build\libs\elementalfoxes-1.0.jar, --out-jar, C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\build\reobfJar\output.jar, --srg-in, C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\build\createMcpToSrg\output.tsrg, --live'
+Java Launcher: C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\bin\java.exe
+Arguments: '--in-jar, C:\Users\garyn\Documents\git\ElementalFoxes\build\libs\elementalfoxes-1.0.jar, --out-jar, C:\Users\garyn\Documents\git\ElementalFoxes\build\reobfJar\output.jar, --srg-in, C:\Users\garyn\Documents\git\ElementalFoxes\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\garyn\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
  - C:\Users\garyn\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.16.5\7.7.1.153_mapped_official_1.16.5\jei-1.16.5-7.7.1.153_mapped_official_1.16.5-api.jar
@@ -67,7 +67,7 @@ Classpath:
  - C:\Users\garyn\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.8.0-beta4\83b0359d847ee053d745be7ec0d8e9e8a44304b4\slf4j-api-1.8.0-beta4.jar
  - C:\Users\garyn\.gradle\caches\modules-2\files-2.1\org.jline\jline-reader\3.12.1\4382ab1382c7b6f379377ed5f665dc2f6e1218bc\jline-reader-3.12.1.jar
  - C:\Users\garyn\.gradle\caches\modules-2\files-2.1\org.jline\jline-terminal\3.12.1\c777448314e050d980a6b697c140f3bfe9eb7416\jline-terminal-3.12.1.jar
-Working directory: C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\build\reobfJar
+Working directory: C:\Users\garyn\Documents\git\ElementalFoxes\build\reobfJar
 Main class: net.md_5.specialsource.SpecialSource
 ====================================
 Loading mappings
@@ -83,10 +83,10 @@ Remapping jar...  1%
 Remapping jar... 10%
 Remapping jar... 20%
 Remapping jar... 30%
-Remapping jar... 40%
+Remapping jar... 41%
 Remapping jar... 50%
 Remapping jar... 60%
 Remapping jar... 70%
-Remapping jar... 81%
+Remapping jar... 80%
 Remapping jar... 91%
 Remapping jar... 100%

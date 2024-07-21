@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
-    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
-        <mapEntry key="FORGE_GROUP" value="net.minecraftforge"/>
-        <mapEntry key="FORGE_VERSION" value="36.2.34"/>
-        <mapEntry key="MCP_MAPPINGS" value="official_1.16.5"/>
-        <mapEntry key="MCP_VERSION" value="20210115.111550"/>
-        <mapEntry key="MC_VERSION" value="1.16.5"/>
-        <mapEntry key="MOD_CLASSES" value="examplemod%%C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\bin\main;examplemod%%C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\bin\main"/>
-        <mapEntry key="assetDirectory" value="C:\Users\garyn\.gradle\caches\forge_gradle\assets"/>
-        <mapEntry key="assetIndex" value="1.16"/>
-        <mapEntry key="nativesDirectory" value="C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\build\natives"/>
-        <mapEntry key="target" value="fmluserdevclient"/>
-    </mapAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraftforge.userdev.LaunchTesting"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=""/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ElementalFoxes"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -XX:+IgnoreUnrecognizedVMOptions --add-exports=java.base/sun.security.util=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming --add-opens=java.base/java.util.jar=ALL-UNNAMED -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump &quot;-Dos.name=Windows 11&quot; -Dos.version=10.0"/>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\garyn\git\ElementalFoxes\ElementalFoxes\run"/>
+  <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="elementalfoxes"/>
+  <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraftforge.userdev.LaunchTesting"/>
+  <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -XX:+IgnoreUnrecognizedVMOptions --add-exports=java.base/sun.security.util=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming --add-opens=java.base/java.util.jar=ALL-UNNAMED -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump &quot;-Dos.name=Windows 10&quot; -Dos.version=10.0"/>
+  <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=""/>
+  <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\garyn\Documents\git\elementalfoxes\run"/>
+  <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+    <mapEntry key="MOD_CLASSES" value="elementalfoxes%%C:\Users\garyn\Documents\git\elementalfoxes\bin\main;elementalfoxes%%C:\Users\garyn\Documents\git\elementalfoxes\bin\main"/>
+    <mapEntry key="MCP_MAPPINGS" value="official_1.16.5"/>
+    <mapEntry key="MCP_VERSION" value="20210115.111550"/>
+    <mapEntry key="FORGE_VERSION" value="36.2.34"/>
+    <mapEntry key="assetIndex" value="1.16"/>
+    <mapEntry key="assetDirectory" value="C:\Users\garyn\.gradle\caches\forge_gradle\assets"/>
+    <mapEntry key="nativesDirectory" value="C:\Users\garyn\Documents\git\elementalfoxes\build\natives"/>
+    <mapEntry key="FORGE_GROUP" value="net.minecraftforge"/>
+    <mapEntry key="target" value="fmluserdevclient"/>
+    <mapEntry key="MC_VERSION" value="1.16.5"/>
+  </mapAttribute>
 </launchConfiguration>

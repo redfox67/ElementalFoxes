@@ -16,64 +16,70 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
 public class DisplayCaseTileEntity extends LockableLootTileEntity {
-	
-	public static int slots = 1;
-	
-	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
+    
+    public static final int SLOTS = 1;
+    
+    protected NonNullList<ItemStack> items = NonNullList.withSize(SLOTS, ItemStack.EMPTY);
 
-	protected DisplayCaseTileEntity(TileEntityType<?> typeIn) {
-		super(typeIn);
-	}
-	
-	public DisplayCaseTileEntity() {
-		this(TileEntityTypesInit.DISPLAY_CASE_ENTITY_TYPE.get());
-	}
+    protected DisplayCaseTileEntity(TileEntityType<?> typeIn) {
+        super(typeIn);
+    }
+    
+    public DisplayCaseTileEntity() {
+        this(TileEntityTypesInit.DISPLAY_CASE_ENTITY_TYPE.get());
+    }
 
-	@Override
-	public int getContainerSize() {
-		return slots;
-	}
+    @Override
+    public int getContainerSize() {
+        return SLOTS;
+    }
 
-	@Override
-	protected NonNullList<ItemStack> getItems() {
-		return this.items;
-	}
-	
-	public ItemStack getItem() {
-		return this.items.get(0);
-	}
+    @Override
+    protected NonNullList<ItemStack> getItems() {
+        return this.items;
+    }
+    
+    public ItemStack getItem() {
+        return this.items.get(0);
+    }
 
-	@Override
-	protected void setItems(NonNullList<ItemStack> itemsIn) {
-		this.items = itemsIn;
-	}
+    @Override
+    protected void setItems(NonNullList<ItemStack> itemsIn) {
+        this.items = itemsIn;
+    }
 
-	@Override
-	protected ITextComponent getDefaultName() {
-		return new TranslationTextComponent("Display Case");
-	}
+    @Override
+    protected ITextComponent getDefaultName() {
+        return new TranslationTextComponent("container.display_case");
+    }
 
-	@Override
-	protected Container createMenu(int id, PlayerInventory player) {
-		return new DisplayCaseContainer(id, player, this);
-	}
-	
-	@Override
-	public CompoundNBT save(CompoundNBT compound) {
-		super.save(compound);
-		if(!this.trySaveLootTable(compound)) {
-			ItemStackHelper.saveAllItems(compound, this.items);
-		}
-		
-		return compound;
-	}
-	
-	@Override
-	public void load(BlockState state, CompoundNBT nbt) {
-		super.load(state, nbt);
-		this.items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);
-		if (!this.tryLoadLootTable(nbt)) {
-			ItemStackHelper.loadAllItems(nbt, this.items);
-		}
-	}
+    @Override
+    protected Container createMenu(int id, PlayerInventory player) {
+        return new DisplayCaseContainer(id, player, this);
+    }
+    
+    @Override
+    public CompoundNBT save(CompoundNBT compound) {
+        super.save(compound);
+        if(!this.trySaveLootTable(compound)) {
+            ItemStackHelper.saveAllItems(compound, this.items);
+        }
+        
+        return compound;
+    }
+    
+    @Override
+    public void load(BlockState state, CompoundNBT nbt) {
+        super.load(state, nbt);
+        this.items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);
+        if (!this.tryLoadLootTable(nbt)) {
+            ItemStackHelper.loadAllItems(nbt, this.items);
+        }
+    }
+
+    @Override
+    public boolean canPlaceItem(int index, ItemStack stack) {
+        // Ensure the item can be placed in the single slot
+        return index == 0 && super.canPlaceItem(index, stack);
+    }
 }

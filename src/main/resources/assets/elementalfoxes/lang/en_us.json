@@ -22,5 +22,7 @@
 	"block.elementalfoxes.silk_quarry": "Silk Touch Quarry",
 	"block.elementalfoxes.display_case": "Display Case",
 	
-	"itemGroup.elemental_foxes": "Elemental Foxes"
+	"itemGroup.elemental_foxes": "Elemental Foxes",
+	
+	"entity.elementalfoxes.exampleentity": "Example Entity"
 }

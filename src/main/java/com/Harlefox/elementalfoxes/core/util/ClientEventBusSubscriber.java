@@ -1,9 +1,11 @@
 package com.Harlefox.elementalfoxes.core.util;
 
 import com.Harlefox.elementalfoxes.ElementalFoxes;
+import com.Harlefox.elementalfoxes.client.entity.ExampleEntityRenderer;
 import com.Harlefox.elementalfoxes.client.screen.DisplayCaseScreen;
 import com.Harlefox.elementalfoxes.client.ter.DisplayCaseTileEntityRenderer;
 import com.Harlefox.elementalfoxes.core.init.ContainerTypesInit;
+import com.Harlefox.elementalfoxes.core.init.EntityTypesInit;
 import com.Harlefox.elementalfoxes.core.init.KeybindsInit;
 import com.Harlefox.elementalfoxes.core.init.TileEntityTypesInit;
 
@@ -11,6 +13,7 @@ import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -26,6 +29,8 @@ public class ClientEventBusSubscriber {
 		ScreenManager.register(ContainerTypesInit.DISPLAY_CASE_CONTAINER_TYPE.get(), DisplayCaseScreen::new);
 		
 		ClientRegistry.bindTileEntityRenderer(TileEntityTypesInit.DISPLAY_CASE_ENTITY_TYPE.get(), DisplayCaseTileEntityRenderer::new);
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.EXAMPLE.get(), ExampleEntityRenderer::new);
 	}
 
 }
