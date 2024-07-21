@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0'
+version = '1.3'
 group = 'com.Harlefox.elementalfoxes' 
 archivesBaseName = 'elementalfoxes'
 
@@ -99,7 +99,7 @@ jar {
         attributes([
             "Specification-Title": "elementalfoxes",
             "Specification-Vendor": "Harlefox",
-            "Specification-Version": "1", 
+            "Specification-Version": "1.3", 
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"examplemodsareus",
