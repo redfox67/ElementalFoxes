@@ -5,6 +5,7 @@ Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety 
 ## Table of Contents
 
 - [Features](#features)
+- [Current Progress](#current-progress)
 - [Elemental Foxes](#elemental-foxes)
   - [Water Fox](#water-fox)
   - [Fire Fox](#fire-fox)
@@ -27,53 +28,65 @@ Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety 
 - **Elemental Foxes:** Discover nine unique elemental foxes that spawn in specific biomes.
 - **Taming and Breeding:** Tame foxes with specific items and breed them to create foxes with multiple tails.
 - **Unique Abilities:** Each elemental fox grants special abilities to the player.
+- **rarity system** the rarer foxes have more tails and are more powerful.
 - **Dynamic Hybrids:** Breed different elemental foxes to create hybrids with combined abilities and an increased number of tails.
+- **Boss Arenas** Fight stronger versions of foxes to be able to tame them and add to your collection.
+- **Miscellaneous small additions** miscellaneous small additions to the mod; most are just for fun and following the tutorial I used.
+
+## Current Progress
+
+- **Example Fox Entity** Added a basic fox entity, which is currently unanimated. Inherits behavior from vanilla foxes
+- **Quarries** Added a Quarry block in both normal and silk touch varieties. Both will break the block below and place the item above, where silk will drop the item as if silk touched. Silk will also break containers and preserve contents as NBT tags.
+- **Display Case** Added a display case tile entity, which displays the item placed inside, along with the name of the item, including custom-named items.
+- **Lightning Conductor** Added a block that summons a lightning strike when powered by Redstone.
+- **Vulpesium** Added a rareish ore, Vulpesium. Mining drops a crystal, which can be crafted into a block or smelted into an ingot. The ingot can be crafted into armor and tools, which, for now, are just OP. 
+
 
 ## Elemental Foxes
 
 ### Water Fox
 - **Spawn:** Beaches, oceans, or near water.
-- **Taming Item:** Rarest fish.
+- **Taming Item:** Fishy chicken.
 - **Abilities:** Grants dolphins grace effect and luck of the sea.
 
 ### Fire Fox
 - **Spawn:** Nether, or near lava pools.
-- **Taming Item:** Blaze powder.
+- **Taming Item:** Fiery chicken.
 - **Abilities:** Provides fire resistance, smelts items 2x faster than a furnace.
 
 ### End Fox
 - **Spawn:** The End.
-- **Taming Item:** Eyes of ender.
+- **Taming Item:** Ender chicken.
 - **Abilities:** Teleports the player to the last location they were fed ender pearls.
 
 ### Stone Fox
 - **Spawn:** Underground.
-- **Taming Item:** Iron pickaxe.
+- **Taming Item:** Iron Chicken.
 - **Abilities:** Grants haste and efficiency.
 
 ### Ice Fox
 - **Spawn:** Snowy or icy biomes.
-- **Taming Item:** Blue ice.
+- **Taming Item:** Frosted chicken.
 - **Abilities:** Grants frost walker and immunity to fire on the ground.
 
 ### Earth Fox
 - **Spawn:** Grassy biomes.
-- **Taming Item:** Bucket of mud (crafted from a bucket of water and 8 dirt).
+- **Taming Item:** Muddy chicken.
 - **Abilities:** Grants night vision and increases crop growth rate.
 
 ### Sky Fox
 - **Spawn:** Mountain tops.
-- **Taming Item:** Glowstone.
+- **Taming Item:** Aether chicken.
 - **Abilities:** Permanent slow falling, jump boost.
 
 ### Desert Fox
 - **Spawn:** Deserts, higher chance near desert temples.
-- **Taming Item:** Emeralds.
+- **Taming Item:** Golden chicken.
 - **Abilities:** Grants looting and fortune.
 
 ### Lightning Fox
 - **Spawn:** During lightning storms with a clear view of the sky.
-- **Taming Item:** Redstone block.
+- **Taming Item:** Charged chicken.
 - **Abilities:** Summons lightning, grants lightning resistance, activates redstone components.
 
 ## Breeding Mechanics
@@ -88,11 +101,11 @@ Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety 
 
 ## Spawn Eggs
 
-- Spawn eggs are available for each elemental fox, but not for hybrids.
+- Spawn eggs are available for each elemental fox, at each rarity, but not for hybrids.
 
 ## Installation
 
-1. Download the mod file.
+1. Download the mod file. (When available)
 2. Place the file in your Minecraft `mods` folder.
 3. Launch Minecraft with Forge installed.
 
