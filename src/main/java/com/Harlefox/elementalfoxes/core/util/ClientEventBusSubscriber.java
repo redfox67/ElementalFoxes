@@ -1,7 +1,7 @@
 package com.Harlefox.elementalfoxes.core.util;
 
 import com.Harlefox.elementalfoxes.ElementalFoxes;
-import com.Harlefox.elementalfoxes.client.entity.ExampleEntityRenderer;
+import com.Harlefox.elementalfoxes.client.entity.ExampleFoxRenderer;
 import com.Harlefox.elementalfoxes.client.screen.DisplayCaseScreen;
 import com.Harlefox.elementalfoxes.client.ter.DisplayCaseTileEntityRenderer;
 import com.Harlefox.elementalfoxes.core.init.ContainerTypesInit;
@@ -30,7 +30,7 @@ public class ClientEventBusSubscriber {
 		
 		ClientRegistry.bindTileEntityRenderer(TileEntityTypesInit.DISPLAY_CASE_ENTITY_TYPE.get(), DisplayCaseTileEntityRenderer::new);
 		
-		RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.EXAMPLE.get(), ExampleEntityRenderer::new);
+		RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.EXAMPLE.get(), ExampleFoxRenderer::new);
 	}
 
 }

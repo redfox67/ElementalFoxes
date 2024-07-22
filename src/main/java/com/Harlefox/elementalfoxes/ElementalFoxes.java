@@ -3,7 +3,7 @@ package com.Harlefox.elementalfoxes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.Harlefox.elementalfoxes.common.entity.ExampleEntity;
+import com.Harlefox.elementalfoxes.common.entity.ExampleFox;
 import com.Harlefox.elementalfoxes.core.init.BlockInit;
 import com.Harlefox.elementalfoxes.core.init.ContainerTypesInit;
 import com.Harlefox.elementalfoxes.core.init.EntityTypesInit;
@@ -62,7 +62,7 @@ public class ElementalFoxes {
 	public void commonSetup(final FMLCommonSetupEvent event) {
 		TutorialNetwork.init();
 		DeferredWorkQueue.runLater(() -> {
-            GlobalEntityTypeAttributes.put(EntityTypesInit.EXAMPLE.get(), ExampleEntity.setAttributes());
+            GlobalEntityTypeAttributes.put(EntityTypesInit.EXAMPLE.get(), ExampleFox.setAttributes());
         });
 	}
 	
