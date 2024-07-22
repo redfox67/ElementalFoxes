@@ -1,80 +1,142 @@
-Elemental Foxes Mod
-Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety of elemental-based foxes that spawn in specific biomes and offer unique abilities to players who tame them. Additionally, these foxes can be bred to produce offspring with multiple tails, adding an extra layer of rarity and customization.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elemental Foxes Mod</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; }
+  h1, h2, h3 { color: #333; }
+  ul { list-style-type: none; padding-left: 0; }
+  li { margin-bottom: 10px; }
+</style>
+</head>
+<body>
 
-Table of Contents
-Features
-Elemental Foxes
-Water Fox
-Fire Fox
-End Fox
-Stone Fox
-Ice Fox
-Earth Fox
-Sky Fox
-Desert Fox
-Lightning Fox
-Breeding Mechanics
-Hybrid Foxes
-Spawn Eggs
-Installation
-Contributing
-License
-Features
-Elemental Foxes: Discover nine unique elemental foxes that spawn in specific biomes.
-Taming and Breeding: Tame foxes with specific items and breed them to create foxes with multiple tails.
-Unique Abilities: Each elemental fox grants special abilities to the player.
-Dynamic Hybrids: Breed different elemental foxes to create hybrids with combined abilities and an increased number of tails.
-Elemental Foxes
-Water Fox
-Spawn: Beaches, oceans, or near water.
-Taming Item: Rarest fish.
-Abilities: Grants dolphins grace effect and luck of the sea.
-Fire Fox
-Spawn: Nether, or near lava pools.
-Taming Item: Blaze powder.
-Abilities: Provides fire resistance, smelts items 2x faster than a furnace.
-End Fox
-Spawn: The End.
-Taming Item: Eyes of ender.
-Abilities: Teleports the player to the last location they were fed ender pearls.
-Stone Fox
-Spawn: Underground.
-Taming Item: Iron pickaxe.
-Abilities: Grants haste and efficiency.
-Ice Fox
-Spawn: Snowy or icy biomes.
-Taming Item: Blue ice.
-Abilities: Grants frost walker and immunity to fire on the ground.
-Earth Fox
-Spawn: Grassy biomes.
-Taming Item: Bucket of mud (crafted from a bucket of water and 8 dirt).
-Abilities: Grants night vision and increases crop growth rate.
-Sky Fox
-Spawn: Mountain tops.
-Taming Item: Glowstone.
-Abilities: Permanent slow falling, jump boost.
-Desert Fox
-Spawn: Deserts, higher chance near desert temples.
-Taming Item: Emeralds.
-Abilities: Grants looting and fortune.
-Lightning Fox
-Spawn: During lightning storms with a clear view of the sky.
-Taming Item: Redstone block.
-Abilities: Summons lightning, grants lightning resistance, activates redstone components.
-Breeding Mechanics
-Breed two foxes of the same element to get a fox with an additional tail, up to a maximum of nine.
-Breed different elemental foxes to create a hybrid with the highest number of tails plus one if both parents have the same number of tails.
-Hybrid Foxes
-Hybrid foxes inherit abilities from both parent elements.
-A dynamically generated system blends the breeds of each parent, creating unique hybrids.
-Spawn Eggs
-Spawn eggs are available for each elemental fox, but not for hybrids.
-Installation
-Download the mod file.
-Place the file in your Minecraft mods folder.
-Launch Minecraft with Forge installed.
-Contributing
-Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
+<h1>Elemental Foxes Mod</h1>
+<p>Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety of elemental-based foxes that spawn in specific biomes and offer unique abilities to players who tame them. Additionally, these foxes can be bred to produce offspring with multiple tails, adding an extra layer of rarity and customization.</p>
 
-License
-This project is licensed under the MIT License.
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#elemental-foxes">Elemental Foxes</a>
+    <ul>
+      <li><a href="#water-fox">Water Fox</a></li>
+      <li><a href="#fire-fox">Fire Fox</a></li>
+      <li><a href="#end-fox">End Fox</a></li>
+      <li><a href="#stone-fox">Stone Fox</a></li>
+      <li><a href="#ice-fox">Ice Fox</a></li>
+      <li><a href="#earth-fox">Earth Fox</a></li>
+      <li><a href="#sky-fox">Sky Fox</a></li>
+      <li><a href="#desert-fox">Desert Fox</a></li>
+      <li><a href="#lightning-fox">Lightning Fox</a></li>
+    </ul>
+  </li>
+  <li><a href="#breeding-mechanics">Breeding Mechanics</a></li>
+  <li><a href="#hybrid-foxes">Hybrid Foxes</a></li>
+  <li><a href="#spawn-eggs">Spawn Eggs</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
+
+<h2 id="features">Features</h2>
+<ul>
+  <li><strong>Elemental Foxes:</strong> Discover nine unique elemental foxes that spawn in specific biomes.</li>
+  <li><strong>Taming and Breeding:</strong> Tame foxes with specific items and breed them to create foxes with multiple tails.</li>
+  <li><strong>Unique Abilities:</strong> Each elemental fox grants special abilities to the player.</li>
+  <li><strong>Dynamic Hybrids:</strong> Breed different elemental foxes to create hybrids with combined abilities and an increased number of tails.</li>
+</ul>
+
+<h2 id="elemental-foxes">Elemental Foxes</h2>
+
+<h3 id="water-fox">Water Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Beaches, oceans, or near water.</li>
+  <li><strong>Taming Item:</strong> Rarest fish.</li>
+  <li><strong>Abilities:</strong> Grants dolphins grace effect and luck of the sea.</li>
+</ul>
+
+<h3 id="fire-fox">Fire Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Nether, or near lava pools.</li>
+  <li><strong>Taming Item:</strong> Blaze powder.</li>
+  <li><strong>Abilities:</strong> Provides fire resistance, smelts items 2x faster than a furnace.</li>
+</ul>
+
+<h3 id="end-fox">End Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> The End.</li>
+  <li><strong>Taming Item:</strong> Eyes of ender.</li>
+  <li><strong>Abilities:</strong> Teleports the player to the last location they were fed ender pearls.</li>
+</ul>
+
+<h3 id="stone-fox">Stone Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Underground.</li>
+  <li><strong>Taming Item:</strong> Iron pickaxe.</li>
+  <li><strong>Abilities:</strong> Grants haste and efficiency.</li>
+</ul>
+
+<h3 id="ice-fox">Ice Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Snowy or icy biomes.</li>
+  <li><strong>Taming Item:</strong> Blue ice.</li>
+  <li><strong>Abilities:</strong> Grants frost walker and immunity to fire on the ground.</li>
+</ul>
+
+<h3 id="earth-fox">Earth Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Grassy biomes.</li>
+  <li><strong>Taming Item:</strong> Bucket of mud (crafted from a bucket of water and 8 dirt).</li>
+  <li><strong>Abilities:</strong> Grants night vision and increases crop growth rate.</li>
+</ul>
+
+<h3 id="sky-fox">Sky Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Mountain tops.</li>
+  <li><strong>Taming Item:</strong> Glowstone.</li>
+  <li><strong>Abilities:</strong> Permanent slow falling, jump boost.</li>
+</ul>
+
+<h3 id="desert-fox">Desert Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> Deserts, higher chance near desert temples.</li>
+  <li><strong>Taming Item:</strong> Emeralds.</li>
+  <li><strong>Abilities:</strong> Grants looting and fortune.</li>
+</ul>
+
+<h3 id="lightning-fox">Lightning Fox</h3>
+<ul>
+  <li><strong>Spawn:</strong> During lightning storms with a clear view of the sky.</li>
+  <li><strong>Taming Item:</strong> Redstone block.</li>
+  <li><strong>Abilities:</strong> Summons lightning, grants lightning resistance, activates redstone components.</li>
+</ul>
+
+<h2 id="breeding-mechanics">Breeding Mechanics</h2>
+<ul>
+  <li>Breed two foxes of the same element to get a fox with an additional tail, up to a maximum of nine.</li>
+  <li>Breed different elemental foxes to create a hybrid with the highest number of tails plus one if both parents have the same number of tails.</li>
+</ul>
+
+<h2 id="hybrid-foxes">Hybrid Foxes</h2>
+<p>Hybrid foxes inherit abilities from both parent elements. A dynamically generated system blends the breeds of each parent, creating unique hybrids.</p>
+
+<h2 id="spawn-eggs">Spawn Eggs</h2>
+<p>Spawn eggs are available for each elemental fox, but not for hybrids.</p>
+
+<h2 id="installation">Installation</h2>
+<ol>
+  <li>Download the mod file.</li>
+  <li>Place the file in your Minecraft <code>mods</code> folder.</li>
+  <li>Launch Minecraft with Forge installed.</li>
+</ol>
+
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.</p>
+
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License.</p>
+
+</body>
+</html>
