@@ -105,9 +105,9 @@ Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety 
 
 ## Installation
 
-1. Download the mod file. (When available)
+1. Download the mod file. (elementalfoxes-1.3.jar)
 2. Place the file in your Minecraft `mods` folder.
-3. Launch Minecraft with Forge installed.
+3. Launch Minecraft with Forge 1.16.5 installed.
 
 ## Contributing
 
