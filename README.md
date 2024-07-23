@@ -91,17 +91,17 @@ Welcome to the Elemental Foxes Mod for Minecraft! This mod introduces a variety 
 
 ## Breeding Mechanics
 
-- Breed two foxes of the same element to get a fox with an additional tail, up to a maximum of nine.
-- Breed different elemental foxes to create a hybrid with the highest number of tails plus one if both parents have the same number of tails.
+- When two foxes are bred, the child will have a tail count equal to the lowest parent count minus one. for example, a two and a one will give a two, where a two and a two will give a three.
+- Breed different elemental foxes to create a hybrid combining the powers of both parents, when hybrids are bred they follow a TBD inheritance system
 
 ## Hybrid Foxes
 
 - Hybrid foxes inherit abilities from both parent elements.
-- A dynamically generated system blends the breeds of each parent, creating unique hybrids.
+- A dynamically generated system blends the breeds of each parent, creating hybrids such as fire/ice or end/lightning/stone.
 
 ## Spawn Eggs
 
-- Spawn eggs are available for each elemental fox, at each rarity, but not for hybrids.
+- Spawn eggs are available for each elemental fox, at each rarity, but not for hybrids. for example, a fire level four but not a fire/ice level two
 
 ## Installation
 
