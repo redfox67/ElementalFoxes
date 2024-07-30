@@ -3,6 +3,7 @@ package com.Harlefox.elementalfoxes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.Harlefox.elementalfoxes.common.Item.ExampleFoxSpawnEgg;
 import com.Harlefox.elementalfoxes.common.entity.ExampleFox;
 import com.Harlefox.elementalfoxes.core.init.BlockInit;
 import com.Harlefox.elementalfoxes.core.init.ContainerTypesInit;
@@ -13,6 +14,7 @@ import com.Harlefox.elementalfoxes.core.init.TileEntityTypesInit;
 import com.Harlefox.elementalfoxes.core.itemgroup.ElementalFoxesItemGroup;
 import com.Harlefox.elementalfoxes.core.network.TutorialNetwork;
 
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -59,6 +61,12 @@ public class ElementalFoxes {
 		});
 
 	}
+	
+	@SubscribeEvent
+	public static void onRegisterEntities (final RegistryEvent.Register<EntityType<?>> event) {
+		ExampleFoxSpawnEgg.initSpawnEggs();
+	}
+	
 	public void commonSetup(final FMLCommonSetupEvent event) {
 		TutorialNetwork.init();
 		DeferredWorkQueue.runLater(() -> {

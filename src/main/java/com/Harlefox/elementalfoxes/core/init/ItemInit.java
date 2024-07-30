@@ -12,7 +12,9 @@ import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.SwordItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -67,5 +69,9 @@ public class ItemInit {
 	public static final RegistryObject<Item> VULPESIUM_BOOTS = ITEMS.register("vulpesium_boots",
 			() -> new ArmorItem(VulpesiumArmorMaterial.VULPESIUM, EquipmentSlotType.FEET,
 					new Item.Properties().tab(ElementalFoxesItemGroup.ELEMENTAL_FOXES)));
+	
+// spawn eggs
+	public static final RegistryObject<Item> EXAMPLE_FOX_SPAWN_EGG = ITEMS.register("example_fox_spawn_egg",
+			() -> new ForgeSpawnEggItem(EntityTypesInit.EXAMPLE, 0xff5d00, 0x0065ff, new Item.Properties().tab(ElementalFoxesItemGroup.ELEMENTAL_FOXES)));
 
 }

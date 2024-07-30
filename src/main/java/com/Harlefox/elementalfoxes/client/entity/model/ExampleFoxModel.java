@@ -12,6 +12,7 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
 
 public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 	private final ModelRenderer Body;
@@ -223,12 +224,12 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 		Tail4_r1.texOffs(20, 47).addBox(-20.1514F, 0.5865F, -2.0F, 4.0F, 4.0F, 4.0F, 0.0F, false);
 
 		LeftHind = new ModelRenderer(this);
-		LeftHind.setPos(3.0F, 14.0F, 16.0F);
+		LeftHind.setPos(3.0F, 1.0F, 17.5F);
 		Body.addChild(LeftHind);
 		
 
 		LH1 = new ModelRenderer(this);
-		LH1.setPos(0.0F, -14.0F, 3.0F);
+		LH1.setPos(0.0F, -1.0F, 1.5F);
 		LeftHind.addChild(LH1);
 		
 
@@ -266,12 +267,12 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 		LHPaw.texOffs(45, 37).addBox(-2.5F, -2.0F, -1.0F, 3.0F, 2.0F, 3.0F, 0.0F, false);
 
 		RightHind = new ModelRenderer(this);
-		RightHind.setPos(-9.0F, 14.0F, 16.0F);
+		RightHind.setPos(-9.0F, 1.0F, 17.5F);
 		Body.addChild(RightHind);
 		
 
 		RH1 = new ModelRenderer(this);
-		RH1.setPos(0.0F, -14.0F, 3.0F);
+		RH1.setPos(0.0F, -1.0F, 1.5F);
 		RightHind.addChild(RH1);
 		
 
@@ -304,12 +305,12 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 		RH3_r1.texOffs(0, 14).addBox(-1.0F, -6.0F, -2.0F, 2.0F, 6.0F, 2.0F, 0.0F, true);
 
 		LeftFront = new ModelRenderer(this);
-		LeftFront.setPos(3.0F, 14.0F, 1.0F);
+		LeftFront.setPos(3.0F, 1.0F, 4.0F);
 		Body.addChild(LeftFront);
 		
 
 		LF1 = new ModelRenderer(this);
-		LF1.setPos(-1.0F, -15.0F, 3.0F);
+		LF1.setPos(-1.0F, -2.0F, 0.0F);
 		LeftFront.addChild(LF1);
 		
 
@@ -336,12 +337,12 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 		LFPaw.texOffs(48, 52).addBox(-2.5F, -2.0F, -1.0F, 3.0F, 2.0F, 3.0F, 0.0F, true);
 
 		RightFront = new ModelRenderer(this);
-		RightFront.setPos(-9.0F, 14.0F, 1.0F);
+		RightFront.setPos(-9.0F, 1.0F, 4.0F);
 		Body.addChild(RightFront);
 		
 
 		RF1 = new ModelRenderer(this);
-		RF1.setPos(1.0F, -15.0F, 3.0F);
+		RF1.setPos(1.0F, -2.0F, 0.0F);
 		RightFront.addChild(RF1);
 		
 
@@ -367,6 +368,7 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 		RF2.addChild(RFPaw);
 		RFPaw.texOffs(48, 52).addBox(-0.5F, -2.0F, -1.0F, 3.0F, 2.0F, 3.0F, 0.0F, false);
 	}
+	
 
 	@Override
 	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
@@ -380,9 +382,13 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 	}
 
 	@Override
-	public void setupAnim(T p_225597_1_, float p_225597_2_, float p_225597_3_, float p_225597_4_, float p_225597_5_,
-			float p_225597_6_) {
-		// TODO Auto-generated method stub
+	public void setupAnim(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		 this.Head.xRot = (headPitch * ((float)Math.PI / 180F))+0.5F;
+	        this.Head.yRot = netHeadYaw * ((float)Math.PI / 180F);
+	        this.RightHind.xRot = MathHelper.cos(limbSwing * 0.6F) * 1.0F * limbSwingAmount;
+	        this.LeftHind.xRot = MathHelper.cos(limbSwing * 0.6F + (float)Math.PI) * 1.0F * limbSwingAmount;
+	        this.RightFront.xRot = MathHelper.cos(limbSwing * 0.6F + (float)Math.PI) * 1.0F * limbSwingAmount;
+	        this.LeftFront.xRot = MathHelper.cos(limbSwing * 0.6F) * 1.0F * limbSwingAmount;
 		
 	}
 

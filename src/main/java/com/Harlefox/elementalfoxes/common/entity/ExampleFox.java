@@ -1,6 +1,6 @@
 package com.Harlefox.elementalfoxes.common.entity;
 
-import javax.annotation.Nullable;
+import com.Harlefox.elementalfoxes.core.init.EntityTypesInit;
 
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.entity.EntityType;
@@ -42,6 +42,7 @@ public class ExampleFox extends FoxEntity {
                 .add(Attributes.ATTACK_KNOCKBACK, 1.0D) // Add attack knockback attribute
                 .add(Attributes.JUMP_STRENGTH, 16.0D)
                 .add(Attributes.ATTACK_DAMAGE, 5.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.5D)
                 .build(); // Build and return AttributeModifierMap
     }
     
@@ -73,8 +74,8 @@ public class ExampleFox extends FoxEntity {
     }
     
 	@Override
-	public FoxEntity getBreedOffspring(ServerWorld p_241840_1_, AgeableEntity p_241840_2_) {
+	public FoxEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
 		// TODO Auto-generated method stub
-		return null;
+		return EntityTypesInit.EXAMPLE.get().create(world);
 	}
 }
