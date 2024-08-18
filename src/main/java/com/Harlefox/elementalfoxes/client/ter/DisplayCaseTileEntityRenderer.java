@@ -39,7 +39,7 @@ public class DisplayCaseTileEntityRenderer extends TileEntityRenderer<DisplayCas
 		ClientPlayerEntity player = mc.player;
 		int lightLevel = getLightLevel(te.getLevel(), te.getBlockPos().above());
 
-		renderItem(te.getItem(), new double[] { 0.5d, .75d, 0.5d }, Vector3f.YP.rotationDegrees(180f - player.yRot),
+		renderItem(te.getItem(), new double[] { 0.5d, .75d, 0.5d }, Vector3f.YP.rotationDegrees(-90f),
 				matrixStackIn, bufferIn, PartialTicks, combinedOverlayIn, lightLevel, 1f);
 
 		ITextComponent label = te.getItem().hasCustomHoverName() ? te.getItem().getDisplayName()

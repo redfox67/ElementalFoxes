@@ -383,7 +383,7 @@ public class ExampleFoxModel<T extends ExampleFox> extends EntityModel<T> {
 
 	@Override
 	public void setupAnim(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		 this.Head.xRot = (headPitch * ((float)Math.PI / 180F))+0.5F;
+		 this.Head.xRot = (headPitch * ((float)Math.PI / 180F));
 	        this.Head.yRot = netHeadYaw * ((float)Math.PI / 180F);
 	        this.RightHind.xRot = MathHelper.cos(limbSwing * 0.6F) * 1.0F * limbSwingAmount;
 	        this.LeftHind.xRot = MathHelper.cos(limbSwing * 0.6F + (float)Math.PI) * 1.0F * limbSwingAmount;
